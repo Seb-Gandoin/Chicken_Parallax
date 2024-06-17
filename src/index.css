@@ -24,7 +24,7 @@ body {
   justify-content: center;
   gap: 10px;
 
-  section{
+  section {
     width: 80%;
     padding: 10px;
     color: var(--lightShades);

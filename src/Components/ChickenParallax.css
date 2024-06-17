@@ -1,0 +1,65 @@
+header {
+    color: var(--lightShades);
+    position: relative;
+    overflow: hidden;
+    
+    nav {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        width: 80%;
+
+        h2 {
+            width: 20%;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            list-style-type: none;
+            width: 100%;
+            text-align: center;
+
+            li {
+                width: 15%;
+                border-radius: 20px;
+                font-size: 1.2rem;
+            }
+
+            & :first-child {
+                background-color: white;
+                color: var(--darkShades);
+            }
+
+        }
+    }
+
+    #parallaxContainer{
+        background: var(--sunset);
+        aspect-ratio: 16/9;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        align-self: flex-start;
+        max-height: 100vh;
+        left: 0;
+
+        .parallaxLayer{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        h1 {
+            color: var(--lightShades);
+            font-size: 3rem;
+            top: 20%;
+            text-align: center;
+
+        }
+    }
+}
